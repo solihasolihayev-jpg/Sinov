@@ -16,7 +16,9 @@ const PORT = process.env.PORT || 3000;
 const MAX_PLAYERS = 40;
 const rooms = new Map();
 
-app.use(express.static('public'));
+const path = require('path');
+
+app.use(express.static(__dirname));
 app.get('/health', (_req, res) => res.json({ ok: true, rooms: rooms.size }));
 
 const questionBank = [
