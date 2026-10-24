@@ -1,0 +1,17 @@
+{
+  "name": "eduverse3d",
+  "version": "0.1.0",
+  "private": true,
+  "description": "EDUVERSE 3D multiplayer learning game starter",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  }
+}
